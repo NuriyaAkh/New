@@ -1,0 +1,14 @@
+.main {
+  flex-grow: 1;
+}
+.main__search {
+  background-image: url('../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1440px;
+height: 576px;
+}
+.main__about-author{
+
+
+}
