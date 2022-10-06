@@ -13,7 +13,6 @@ margin: 0;
 }
 .profile__text {
   width: 600px;
-
 }
 .profile__title {
   font-family: 'Roboto Slab';
@@ -22,9 +21,6 @@ margin: 0;
   font-size: 40px;
   line-height: 46px;
   /* identical to box height, or 115% */
-
-  /* main/primary */
-
   color: #1a1b22;
   margin: 131px 216px 24px 0px;
 }
@@ -35,7 +31,6 @@ margin: 0;
   font-size: 18px;
   line-height: 24px;
   /* or 133% */
-
   color: #1a1b22;
   margin-right:216px;
 }
