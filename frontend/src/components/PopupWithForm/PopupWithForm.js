@@ -15,3 +15,4 @@ const PopupWithForm =({name,formTitle,isOpen,onClose})=>{
     </form>
   )
 }
+export default PopupWithForm;
