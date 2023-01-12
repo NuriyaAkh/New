@@ -19,7 +19,7 @@ const Footer = () => {
           <a href="https://linkedin.com" target="_blank"
               rel="noopener noreferrer"aria-label="View source code on LinkedIn">
             <img src={facebook} alt="facebook logo" className="footer__icons-logo" /></a>
-            <a href="https://github.com" target="_blank"
+            <a href="https://github.com/NuriyaAkh" target="_blank"
               rel="noopener noreferrer"aria-label="View source code on Github">
             <img src={github} alt="github logo" className="footer__icons-logo footer__icons-logo-github"  /></a>
        </div>
