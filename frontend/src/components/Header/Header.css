@@ -1,10 +1,11 @@
 .header {
-  z-index: 1;
+  z-index: 10;
   height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 3px solid rgba(196, 196, 196, 0.1);
+  background: rgba(196, 196, 196, 0.01);
+  border-bottom: 3px solid rgba(14, 210, 95, 0.1);
   width: 100%;
 }
 .header__name {
@@ -18,6 +19,8 @@
   display: flex;
   align-items: center;
   color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
 }
 .header__container {
   display: flex;
@@ -31,12 +34,34 @@
   font-size: 18px;
   line-height: 24px;
   /* identical to box height, or 133% */
-
+  text-decoration: none;
   display: flex;
   align-items: center;
   text-align: center;
-
-  /* main/white */
-
   color: #ffffff;
+  cursor: pointer;
+}
+.header__link:active {
+  padding-bottom: 23px;
+  border-bottom: 3px solid white;
+}
+.header__button {
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  background: rgba(196, 196, 196, 0.01);
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  padding: 12px;
+  min-width: 152px;
+  color: #ffffff;
+  margin-left: 34px;
+  cursor: pointer;
 }
