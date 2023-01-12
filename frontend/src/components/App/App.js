@@ -6,6 +6,7 @@ import Footer from '../Footer/Footer';
 import About from '../About/About';
 import Header from '../Header/Header';
 import { BrowserRouter as Router } from 'react-router-dom';
+import Modal from '../Modal/Modal';
 const App = () => {
   return (
     <div className="page">
@@ -14,6 +15,7 @@ const App = () => {
         <Main />
         <About />
         <Footer />
+        <Modal/>
       </Router>
     </div>
   );
