@@ -1,0 +1,102 @@
+.card__img {
+  height: 272px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  border: none;
+  border-radius: 15px 15px 0px 0px;
+}
+.card {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 576px;
+  margin-top: 50px;
+  margin-left: 50px;
+  max-width: 400px;
+  filter: drop-shadow(10px 10px 10px rgba(8, 29, 45, 0.1));
+  border-radius: 15px;
+}
+.card__date {
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #b6bcbf;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 12px;
+}
+.card__info {
+  padding: 24px;
+  padding-top: 20px;
+  height: 100%;
+
+}
+.card__save-button {
+  background-image: url(../../images/saveArticle.png);
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.3s ease-out opacity;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border: none;
+}
+.card__title {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  /* identical to box height, or 115% */
+
+  /* main/primary */
+
+  color: #1a1b22;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  padding-bottom: 16px;
+}
+.card__content{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+/* or 138% */
+
+
+/* main/primary */
+
+color: #1A1B22;
+margin: 0;
+padding: 0;
+}
+.card__source{
+  font-family: 'Roboto Slab';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+letter-spacing: 0.4px;
+text-transform: uppercase;
+
+/* simulator/gray/text */
+
+color: #B6BCBF;
+margin: 0;
+padding-top: 18px;
+}
