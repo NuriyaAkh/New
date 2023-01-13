@@ -7,16 +7,19 @@ import About from '../About/About';
 import Header from '../Header/Header';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Modal from '../Modal/Modal';
+import PopupWithForm from '../PopupWithForm/PopupWithForm';
 const App = () => {
   return (
     <div className="page">
-      <Router>
+
         <Header />
         <Main />
         <About />
         <Footer />
         <Modal/>
-      </Router>
+
+
+      <PopupWithForm  formTitle={"Sign in"}actionButtonText={"Sign in"}actionLinkText={"Sign up"}/>
     </div>
   );
 };
