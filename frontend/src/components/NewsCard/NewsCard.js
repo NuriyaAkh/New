@@ -7,8 +7,8 @@ const NewsCard = ({ card, onCardSave, onCardClick }) => {
     onCardClick(card);
   };
   return (
-    <div className="card">
-      <img className="card__img" src={card.link} alt={card.name} onClick={handleImageClick} />
+    <div className="card" onClick={handleImageClick}>
+      <img className="card__img" src={card.link} alt={card.name}  />
       <button
         aria-label="save article button"
         className="card__save-button"

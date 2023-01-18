@@ -5,7 +5,7 @@ import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 import About from '../About/About';
 import Header from '../Header/Header';
-import NewsCard from '../NewsCard/NewsCard'
+import NewsCardList from '../NewsCardList/NewsCardList'
 import { BrowserRouter as Router } from 'react-router-dom';
 const App = () => {
   const card ={
@@ -21,7 +21,7 @@ const App = () => {
       <Router>
         <Header />
         <Main />
-        <NewsCard card={card} onCardSave={()=>console.log("hi")} onCardClick={()=>console.log("hi")}
+        <NewsCardList card={card} onCardSave={()=>console.log("save")} onCardClick={()=>console.log("card click")}
       />
         <About />
         <Footer />

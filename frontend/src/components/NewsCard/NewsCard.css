@@ -13,8 +13,7 @@
   flex-direction: column;
   position: relative;
   height: 576px;
-  margin-top: 50px;
-  margin-left: 50px;
+
   max-width: 400px;
   filter: drop-shadow(10px 10px 10px rgba(8, 29, 45, 0.1));
   border-radius: 15px;
