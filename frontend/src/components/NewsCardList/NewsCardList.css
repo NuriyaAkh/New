@@ -2,6 +2,7 @@
   background: #F5F6F7;
   padding:80px 104px;
 
+
 }
 .list__content{
 margin-top: 64px;
@@ -10,7 +11,7 @@ grid-template-columns: 1fr 1fr 1fr;
 column-gap: 16px;
 }
 .list__button{
-background: #FFFFFF;
+background:#FFFFFF;;
 border-radius: 80px;
 width:288px;
 height:64px;
@@ -24,7 +25,9 @@ font-size: 18px;
 line-height: 24px;
 /* identical to box height, or 133% */
 display: flex;
+justify-content: center;
 align-items: center;
+
 text-align: center;
 
 /* main/primary */
