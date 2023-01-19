@@ -1,5 +1,7 @@
 import './NewsCard.css'
-const NewsCard = ({ card, onCardSave, onCardClick }) => {
+import BookmarkIcon from '../Icons/BookmarkIcon';
+
+const NewsCard = ({ card, onCardSave, onCardClick,fill,stroke }) => {
   const handleSaveClick = () => {
     onCardSave(card);
   };
@@ -14,7 +16,7 @@ const NewsCard = ({ card, onCardSave, onCardClick }) => {
         className="card__save-button"
         type="button"
         onClick={handleSaveClick}
-      />
+      ><BookmarkIcon fill="none" stroke="black"/></button>
       <div className="card__info">
         <p className="card__date">{card.date}</p>
         <h3 className="card__title">{card.title}</h3>
