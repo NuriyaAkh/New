@@ -1,5 +1,6 @@
 .card__img {
   height: 272px;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   position: relative;
@@ -13,7 +14,6 @@
   flex-direction: column;
   position: relative;
   height: 576px;
-
   max-width: 400px;
   filter: drop-shadow(10px 10px 10px rgba(8, 29, 45, 0.1));
   border-radius: 15px;
@@ -95,7 +95,7 @@
   padding-bottom: 16px;
 }
 .card__content{
-  font-family: 'Roboto';
+font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -110,7 +110,7 @@ margin: 0;
 padding: 0;
 }
 .card__source{
-  font-family: 'Roboto Slab';
+font-family: 'Roboto Slab';
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
