@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 import About from '../About/About';
 import Header from '../Header/Header';
 import NewsCardList from '../NewsCardList/NewsCardList';
-import { getNews } from '../../utils/newsApi';
+import { getNews} from '../../utils/newsApi';
 import { BrowserRouter as Router } from 'react-router-dom';
 const App = () => {
   const [showMore, setShowMore] = useState(false);
