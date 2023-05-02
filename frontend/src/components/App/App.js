@@ -12,10 +12,10 @@ const App = () => {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
-    getNews()
+    getNews(process.env.REACT_APP_NEWS_API_KEY)
       .then((data) => {
         console.log(data);
-        setNews(data.slice(0, 3))})
+        setNews(data.slice(0, 6))})
       .catch((err) => {
         console.error('Error. The request failed', err);
       });
@@ -30,7 +30,7 @@ const App = () => {
         <Router>
         <Header />
       <Main />
-      <NewsCardList cards={news} onCardSave={() => console.log('save')} onCardClick={() => console.log('card click')} handleShowMore={handleShowMore} />
+      <NewsCardList cards={news} onCardSave={() => console.log('save')} handleShowMore={handleShowMore} />
       <About />
       <Footer />
         </Router>
