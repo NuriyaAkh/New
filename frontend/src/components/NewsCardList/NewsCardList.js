@@ -9,7 +9,7 @@ const NewsCardList = ({ cards, onCardSave, onCardClick, handleShowMore }) => {
       <div className="list__content">
         {
           cards.map((card)=>(
-<NewsCard key={card.id} card={card} onCardSave={onCardSave} onCardClick={onCardClick} />
+<NewsCard key={card.url} card={card} onCardSave={onCardSave} onCardClick={onCardClick} />
           ))
         }
 

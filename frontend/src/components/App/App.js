@@ -14,7 +14,6 @@ const App = () => {
   useEffect(() => {
     getNews(process.env.REACT_APP_NEWS_API_KEY)
       .then((data) => {
-        console.log(data);
         setNews(data.slice(0, 6))})
       .catch((err) => {
         console.error('Error. The request failed', err);

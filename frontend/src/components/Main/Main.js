@@ -9,23 +9,24 @@ import NewsCard from '../NewsCard/NewsCard';
 const Main = () => {
 
   const [searchResults, setSearchResults] = useState([]);
-  console.log("search results",searchResults)
+
   const [query, setQuery] = useState('');
   const handleSearchQuery = (query) => {
     setQuery(query);
+    console.log(query)
   };
   useEffect(() => {
     if (query) {
       onSearchQuery(query, process.env.REACT_APP_NEWS_API_KEY)
-        .then((response) => response.json())
         .then((data) => {
           // Update the state with the search results
-          setSearchResults(data.articles);
+          console.log(data);
+          setSearchResults(data.slice(0, 5));
         })
         .catch((error) => console.log(error));
     }
   }, [query]);
-
+console.log("search",searchResults)
 
   return <main className="main">
      <div className="main__container">
@@ -37,7 +38,7 @@ const Main = () => {
       </div>
 <SearchForm onSearchQuery={handleSearchQuery}/>
  {/* Display search results */}
- {searchResults.map((article) => (
+ {searchResults.length > 0 && searchResults.map((article) => (
         <NewsCard
         key={article.url} card={article}
         />
