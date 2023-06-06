@@ -4,17 +4,12 @@ class Api {
     this._baseUrl = options.baseUrl;
     this._headers = options.headers;
   }
-
-
-
-
-
 }
-const BASE_URL =  process.env.REACT_APP_API_URL|| 'http://localhost:4000';
+const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:4000';
 export default new Api({
   baseUrl: BASE_URL,
   headers: {
     authorization: `Bearer ${localStorage.getItem('jwt')}`,
-    "Content-Type": "application/json"
-  }
+    'Content-Type': 'application/json',
+  },
 });

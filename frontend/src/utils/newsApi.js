@@ -17,5 +17,3 @@ export const onSearchQuery = (query, NEWS_API_KEY) => {
     })
     .catch((error) => console.log(error));
 };
-
-
