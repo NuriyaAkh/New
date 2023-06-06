@@ -1,0 +1,125 @@
+.card__img {
+  height: 272px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  border: none;
+  border-radius: 15px 15px 0px 0px;
+  text-decoration: none;
+}
+.card {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 576px;
+  max-width: 400px;
+  filter: drop-shadow(10px 10px 10px rgba(8, 29, 45, 0.1));
+  border-radius: 15px;
+}
+.card__date {
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #b6bcbf;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 12px;
+}
+.card__info {
+  padding: 24px;
+  padding-top: 20px;
+  height: 100%;
+}
+.card__save-button {
+  background-image: url(../../images/bookmark1.svg);
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-color: white;
+  background-repeat: no-repeat;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.3s ease-out opacity;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  text-align: center;
+}
+.card__save-button:hover {
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='19' viewBox='0 0 40 55' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='40' height='40' rx='8' fill='white'/%3E%3Cpath d='M19.3822 23.7137L14 27.9425V12L26 12V27.9425L20.6178 23.7137L20 23.2283L19.3822 23.7137Z' stroke='%231A1B22' stroke-width='2'/%3E%3C/svg%3E");
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-color: white;
+  background-repeat: no-repeat;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.3s ease-out opacity;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  text-align: center;
+}
+.card__save-button-active {
+  background-image: url(../../images/bookmark.svg);
+  transition: 0.3s ease-out opacity;
+}
+.card__title {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  /* identical to box height, or 115% */
+
+  /* main/primary */
+
+  color: #1a1b22;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  padding-bottom: 16px;
+}
+.card__content {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* or 138% */
+
+  /* main/primary */
+
+  color: #1a1b22;
+  margin: 0;
+  padding: 0;
+}
+.card__source {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+
+  /* simulator/gray/text */
+
+  color: #b6bcbf;
+  margin: 0;
+  padding-top: 18px;
+}

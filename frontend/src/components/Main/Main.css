@@ -13,7 +13,6 @@
   align-items: center;
   justify-content: center;
   z-index: -1;
-  
 }
 .main__title {
   font-family: 'Roboto Slab';
@@ -24,7 +23,6 @@
   /* or 107% */
   max-width: 608px;
   margin: 0 0 32px;
-
 }
 .main__text {
   font-family: 'Roboto';
