@@ -5,9 +5,8 @@ import './Main.css';
 import { useEffect, useState } from 'react';
 import SearchForm from '../SearchForm/SearchForm';
 import { onSearchQuery } from '../../utils/newsApi';
-import NewsCardList from '../NewsCardList/NewsCardList';
-const Main = () => {
-  const [searchResults, setSearchResults] = useState([]);
+
+const Main = ({ onSearchQuerySuccess }) => {
 
   const [query, setQuery] = useState('');
   const handleSearchQuery = (query) => {
@@ -20,14 +19,14 @@ const Main = () => {
         .then((data) => {
           // Update the state with the search results
           console.log(data);
-          setSearchResults(data.slice(0, 5));
+          onSearchQuerySuccess(data.slice(0, 5));
         })
         .catch((error) => console.log(error));
     } else {
-      setSearchResults([]);
+      onSearchQuerySuccess([]);
     }
   }, [query]);
-  console.log('search', searchResults);
+  console.log('search', onSearchQuerySuccess);
 
   return (
     <main className="main">
@@ -38,10 +37,7 @@ const Main = () => {
         </p>
       </div>
       <SearchForm onSearchQuery={handleSearchQuery} />
-      {/* Display search results */}
-      {searchResults.length > 0 ? (
-        <NewsCardList cards={searchResults} onCardSave={() => console.log('save')} />
-      ) : null}
+      
     </main>
   );
 };

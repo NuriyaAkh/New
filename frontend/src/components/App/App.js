@@ -10,7 +10,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 const App = () => {
   const [showMore, setShowMore] = useState(false);
   const [news, setNews] = useState([]);
-
+  const [searchedResults, setSearchedResults] = useState([]);
   useEffect(() => {
     getNews(process.env.REACT_APP_NEWS_API_KEY)
       .then((data) => {
@@ -24,12 +24,18 @@ const App = () => {
   const handleShowMore = () => {
     setShowMore(!showMore);
   };
-
+  const handleSearchedResults = (results) => {
+    setSearchedResults(results);
+  };
   return (
     <div className="page">
       <Router>
         <Header />
-        <Main />
+        <Main onSearchQuerySuccess={handleSearchedResults}/>
+        {/* Display search results */}
+        {searchedResults.length > 0 && (
+          <NewsCardList cards={searchedResults} onCardSave={() => console.log('save')} />
+        )}
         <NewsCardList
           cards={news}
           onCardSave={() => console.log('save')}

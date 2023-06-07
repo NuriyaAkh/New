@@ -7,8 +7,8 @@ const PopupWithForm = ({ name, formTitle, isOpen, onClose }) => {
       className="form"
       name={name}
       action="#"
-      onSubmit={onSubmit}
-      onChange={onChange}
+      // onSubmit={onSubmit}
+      // onChange={onChange}
       noValidate
     >
       <h2 className="form__title">{formTitle}</h2>
